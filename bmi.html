@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id = "w">
+<input type="text" id = "h">
+<button onclick="chiso()">Tính</button>
+<script>
+    function chiso() {
+        let weight = document.getElementById('w').value;
+        let height = document.getElementById('h').value;
+        let BMI = weight / (height*height);
+        if (BMI < 18) {
+            document.write('Underweight ');
+        } else if (BMI < 25.0) {
+            document.write('Normal ');
+        } else if (BMI < 30.0) {
+            document.write('Overweight ');
+        } else {
+            document.write('Obese');
+        }
+    }
+</script>
+
+</body>
+</html>
